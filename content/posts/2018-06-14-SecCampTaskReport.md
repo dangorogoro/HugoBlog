@@ -4,7 +4,7 @@ date: "2018-06-14"
 categories: ["セキュリティ・キャンプ"]
 tags: ["セキュリティ・キャンプ", "ポエム"]
 slug: "SecCampTaskReport"
-aliases: "/SecCampTaskReport"
+aliases: "/SecCampTaskReport.html"
 ---
 
 ## セキュリティ キャンプ参加 できそうです

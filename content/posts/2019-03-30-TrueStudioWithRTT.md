@@ -5,7 +5,7 @@ categories: ["STM32", "JLink"]
 cover: "/images/2019-03-30-JLink.jpeg"
 tags: ["STM32", "TrueStudio", J-Link"]
 slug: "TrueStudioWithRTT"
-aliases: "/TrueStudioWithRTT"
+aliases: "/TrueStudioWithRTT.html"
 ---
 
 # J-Link TrueStudio 始めます

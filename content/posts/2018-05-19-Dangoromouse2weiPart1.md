@@ -5,7 +5,7 @@ cover: "/images/2018-05-19-mouse.jpg"
 categories: ["ロボット"]
 tags: ["電子工作", "マイクロマウス", "STM32"]
 slug: "Dangoromouse2weiPart1"
-aliases: "/Dangoromouse2weiPart1"
+aliases: "/Dangoromouse2weiPart1.html"
 ---
 自己紹介のところでマイクロマウスを作っていると言って, 記事を書いていなかった...  
 というわけで2017年度のマイクロマウスの大会で私が作っていたマウスを紹介します.

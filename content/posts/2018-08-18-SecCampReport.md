@@ -5,7 +5,7 @@ cover: "/images/2018-08-18-Day1Where2.jpg"
 categories: ["セキュリティ・キャンプ"]
 tags: ["セキュリティ・キャンプ"]
 slug: ["SecCampReport"]
-aliases: "/SecCampReport"
+aliases: "/SecCampReport.html"
 ---
 8/14から8/18までクロスウェーブ府中で行われたセキュリティ・キャンプに参加しました. 
 ## セキュリティキャンプとは

@@ -6,7 +6,7 @@ cover: "/images/2018-12-14-ChasingImage.jpeg"
 
 tags: ["MATLAB",ロボット", "制御","マイクロマウス"]
 slug: "KanayamaControlMethod"
-aliases: "/KanayamaControlMethod"
+aliases: "/KanayamaControlMethod.html
 ---
 
 # 概要

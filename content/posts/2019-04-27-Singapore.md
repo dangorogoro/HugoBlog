@@ -6,7 +6,7 @@ tags: ["旅行"]
 cover: "/images/2019-04-27-Top3.jpeg"
 
 slug: "Singapore"
-aliases: "/Singapore"
+aliases: "/Singapore.html"
 ---
 
 # TOEIC シンガポールで 受けてみた
