@@ -1,0 +1,59 @@
+baseURL = "utcb.ikiu.me"
+title = "Dango Kajero"
+theme = "dream-plus"
+#themesDir = "../.."		#Don't use this, only for exampleSite
+paginate = 4
+enableRobotsTXT = true
+disqusShortname = "dream-plus"
+
+#Skip building these files
+ignoreFiles = ["content/404.md", "content/about.md", "content/cards/\\.*"]
+
+#Syntax highlighting
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+pygmentsOptions = "linenos=table"
+
+#Enable Hugo Emoji Conversion
+enableEmoji=true
+
+[params]
+	#Favicon for site
+	favicon = "/images/icon.ico"
+
+	#Set whether you're hosting "cards" or "post"
+	contentType = "posts"
+	
+	siteStartYear = 2018
+
+	[params.author]
+		name = "dangorogoro"
+		description = "やったこととか書いていきます"
+		avatar = "/images/icon.jpeg"
+		motto = "味ついてて美味しい"
+
+	[params.features]
+		#Enable Twitter Emoji
+		twitterEmoji = true
+		#Enable Table of Contents
+		toc = true
+		#Enable share card
+		shareCard = true
+		#Use custom CSS
+		customCSS = ["https://cdn.rawgit.com/UtkarshVerma/hugo-dream-plus/ae11561d/exampleSite/static/css/highlight.css"]
+
+	[params.background]
+		colorBG = true
+
+	#Tags settings
+	[params.tags]
+		enabled = true
+
+	#Categories settings
+	[params.categories]
+		enabled = true
+
+[social]
+	email = "dangorogoro0802[α]gmail"
+	github = "dangorogoro"
+	twitter = "dango_bot"
