@@ -1,4 +1,3 @@
-baseURL = "utcb.ikiu.me"
 title = "Dango Kajero"
 theme = "dream-plus"
 #themesDir = "../.."		#Don't use this, only for exampleSite
