@@ -5,7 +5,7 @@ categories: ["ロボット"]
 cover: "/images/2018-09-22-PIDgain.png"
 tags: ["マイクロマウス", "MATLAB"]
 slug: :MATLABSystemIdentification"
-aliases: "/MATLABSystemIdentification.html
+aliases: "/MATLABSystemIdentification.html"
 ---
 
 # MATLABで マウスの同定 やりました.
