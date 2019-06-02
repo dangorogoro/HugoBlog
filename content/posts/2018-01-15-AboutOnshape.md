@@ -6,6 +6,7 @@ categories: ["Onshape"]
 tags: ["Onshape"]
 slug: "AboutOnshape"
 aliases:  "/AboutOnshape.html"
+aliases: "/ShenZhenTrip2018.html"
 ---
 
 最初の記事は今使ってる3DCAD製作支援サービス, Onshapeの話をしようと思います.
