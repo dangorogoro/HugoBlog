@@ -105,8 +105,8 @@ $$
 ## 実装
 ### 前段階
 前段階の処理として, 軌道の点列を生成する必要があります.
-私はidさんがGitHubにあげているスクリプト(slalom.m)を参考にさせていただきました.
-[MIZUHO](https://github.com/idt12312/MIZUHO/tree/master/tool/trajectory_plot)
+私はけりさんがブログに上げているMATLABコードを使いました.
+[MATLABでスラローム軌道生成 KERI's Lab](https://kerikeri.top/posts/2017-09-04-matlab-trajectory/)
 ``` MATLAB
 clear;
 %% 区画の大きさを定義 [mm]
