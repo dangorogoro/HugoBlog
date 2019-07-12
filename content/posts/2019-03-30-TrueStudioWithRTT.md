@@ -2,7 +2,7 @@
 title: "TrueStudioでJ-Link RTTを使う"
 date: "2019-03-30"
 categories: ["STM32", "JLink"]
-cover: "/images/2019-03-30-JLink.jpeg"
+cover: "/images/2019-07-12-JLinkRTT.svg"
 tags: ["STM32", "TrueStudio", J-Link"]
 slug: "TrueStudioWithRTT"
 aliases: "/TrueStudioWithRTT.html"
@@ -161,12 +161,36 @@ $ JLinkRTTLogger
 ```
 を実行すると直接ファイル内に書き出してくれます.
 
+# Tips
+以下にRTTを使ってるときに得られた知見です.
+
+* デバッガに繋いでないときはTargetマイコンの内部に送信データがバッファリングされる.
+* デバッガが繋げられたときにGDBサーバーを立ち上げずともデータがTargetから送信されてデバッガ側にバッファリングされる.
+* GDBサーバーを立ち上げて, Clientを動かすと今までバッファリングされてたデータがPCに送信される.
+
+(以下2019/07/11追記)
+
+* SEGGER_RTT_Printfではstandardなprintfの必要最低限な実装しかされていない.(https://www.segger.com/products/debug-probes/j-link/technology/about-real-time-transfer/ のRTT Implementationより)
+  * そのためfloatの出力ができなかったり, ヒープを使わずに予め設定されたスタックしか使わない.
+  * printfと同等な動作をさせるにはSEGGER_RTT_Writeをsystem callのwriteに差し替えるのが一番楽っぽい.
+
+```c
+__attribute__((weak)) int _write(int file, char *ptr, int len){
+  SEGGER_RTT_Write(0, ptr, len);
+  return len;
+}
+```
+
 # 終わりに
 -----------------------------
 いかがでしたか.(これが言いたかった)
+
 私もまだJ-Linkは使いこなせてないのですが, RTTだけでも今までの辛いデバッグ作業で灰色になっていた私の感情が七色に光りだしました.
+
 RTOSのタスクとかも追えたりできるそうなのでそこらへんも今後やっていきたいと思います.
+
 ![JLink](/images/2019-03-30-JLink.jpeg)
 
 最後に
+
 SEGGERさん, Linux版のJLinkRTTViewerください.
