@@ -1,7 +1,8 @@
+BaseURL = "http://utcb.ikiu.me"
 title = "Dango Kajero"
 theme = "dream-plus"
 #themesDir = "../.."		#Don't use this, only for exampleSite
-paginate = 4
+#paginate = 4
 enableRobotsTXT = true
 disqusShortname = "dream-plus"
 
@@ -19,6 +20,7 @@ enableEmoji=true
 googleAnalytics = "UA-141196296-1"
 
 [params]
+  mathjaxStyle = "mathjax-style.css"
 	#Favicon for site
 	favicon = "/images/icon.ico"
 
@@ -31,7 +33,7 @@ googleAnalytics = "UA-141196296-1"
 		name = "dangorogoro"
 		description = "やったこととか書いていきます"
 		avatar = "/images/icon.jpeg"
-		motto = "味ついてて美味しい"
+		motto = "これからは全てが良くなるよ"
 
 	[params.features]
 		#Enable Twitter Emoji
@@ -41,7 +43,10 @@ googleAnalytics = "UA-141196296-1"
 		#Enable share card
 		shareCard = true
 		#Use custom CSS
+		#customCSS = ["https://cdn.rawgit.com/UtkarshVerma/hugo-dream-plus/ae11561d/exampleSite/static/css/highlight.css"]
 		customCSS = ["https://cdn.rawgit.com/UtkarshVerma/hugo-dream-plus/ae11561d/exampleSite/static/css/highlight.css"]
+   #              "/css/mathjax-style.css",
+    #             "/css/styles.css"]
 
 	[params.background]
 		colorBG = true
