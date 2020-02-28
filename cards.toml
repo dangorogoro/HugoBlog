@@ -1,9 +1,9 @@
-baseURL = "https://dream-plus-cards.netlify.com"
-title = "UtkarshVerma's Site"
+title = "Dango Kajero"
 theme = "dream-plus"
-themesDir = "../.."		#Don't use this, only for exampleSite
-paginate = 4
+#themesDir = "../.."		#Don't use this, only for exampleSite
+#paginate = 4
 enableRobotsTXT = true
+disqusShortname = "dream-plus"
 
 #Skip building these files
 ignoreFiles = ["content/404.md", "content/about.md", "content/posts/\\.*"]
@@ -23,9 +23,7 @@ enableEmoji=true
 	[params.author]
 		name = "Utkarsh Verma"
 		description = "Just a random blog for random stuff, mostly tech-related."
-		avatar = "https://raw.githubusercontent.com/UtkarshVerma/utkarshverma.github.io/source/static/images/avatar.jpg"
 		motto = "A keen maker, programmer and an Instructables author."
-
 	[params.features]
 		#Enable Twitter Emoji
 		twitterEmoji = true
