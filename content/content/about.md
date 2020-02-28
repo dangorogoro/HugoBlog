@@ -14,5 +14,5 @@
 
 ### About this 
 作ったものや知見に備忘録, そんなものを書いていきます.
-### What is utcb in the domain
-Under the cherry blossom
+### What is oino in the domain
+**お祈り** 🙏

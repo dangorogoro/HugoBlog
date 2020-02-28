@@ -45,9 +45,9 @@ AWSにサーバーを借りてブログをPelicanというPythonで書かれた�
 マイクロマウスというロボット競技に参加していて, そのロボットの電子回路は基本的に全て自分で設計し, 部品を発注して作っています.
 マイクロマウスでは赤外線LEDと, フォトトランジスタを使って迷路の壁を調べていくものになっていて, 私はもっと外乱に強いセンサーを作りたいと思って最近はアナログ回路などについて勉強しています.
 昨年の大会で出場したロボットについてブログにまとめていってるところです.
-[http://utcb.ikiu.me/Dangoromouse2weiPart1.html](http://utcb.ikiu.me/Dangoromouse2weiPart1.html)
+[だんごろまうす2weiの紹介 Part1](/posts/2018-08-19-Dangoromouse2weiPart1.html)
 また, ハードウェアについてもロボットの機械的設計を1から全部1人でやっています. Linuxで動く3DCADソフトがあまりなくて, Onshapeというウェブサービスを使って開発を行っています. 以前, このような記事も書きました.
-[http://utcb.ikiu.me/AboutOnshape.html](http://utcb.ikiu.me/AboutOnshape.html)
+[Linuxで動く3DCAD Onshapeのお話](/posts/2018-01-15-AboutOnshape.html)
 
 HDLについてはVerilog-HDLを通してFPGAの制御を勉強しています. 学割でXilinxからPYNQというFPGAを買ったので, そのFPGA部分(一緒に入っているARM CPU上で動作するLinuxではなく)について勉強しようと思っていろいろ調べています.
 最低限のLチカはできたので, マイコンでは実現できない動きを同様に再現するのかとても興味あります.
