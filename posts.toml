@@ -1,8 +1,8 @@
-BaseURL = "http://blog.oino.li"
+BaseURL = "https://blog.oino.li"
 title = "Dango Kajero"
 theme = "dream-plus"
 #themesDir = "../.."		#Don't use this, only for exampleSite
-#paginate = 4
+paginate = 4
 enableRobotsTXT = true
 disqusShortname = "dream-plus"
 
@@ -55,8 +55,11 @@ googleAnalytics = "UA-141196296-1"
 	#Categories settings
 	[params.categories]
 		enabled = true
-
 [social]
 	email = "dangorogoro0802[α]gmail"
 	github = "dangorogoro"
 	twitter = "dango_bot"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
