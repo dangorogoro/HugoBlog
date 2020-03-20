@@ -43,7 +43,7 @@ googleAnalytics = "UA-141196296-1"
 		#Enable share card
 		shareCard = true
 		#Use custom CSS
-		customCSS = ["https://cdn.rawgit.com/UtkarshVerma/hugo-dream-plus/ae11561d/exampleSite/static/css/highlight.css"]
+		customCSS = ["/css/my_style.css"]
 
 	[params.background]
 		colorBG = true
