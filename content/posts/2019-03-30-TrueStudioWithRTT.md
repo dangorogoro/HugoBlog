@@ -16,7 +16,6 @@ aliases: "/TrueStudioWithRTT.html"
 * 最近開発環境がどんどん新しくなってるので取り入れたい.
 * デバッガをもっとフルに使いたい.
 * J-Linkを使いたい.
-* 情けない進化は人の堕落.
 
 などの理由からSTMicroが以前買収したAtollic社から出されているTrueStudioがSTM32をサポートしているのでそれとJ-Linkを使って開発していこうと思いました.
 使った感想としては**文明の力すごいな**という感じですが, その中でも特に**J-Link RTT**を気に入ったのでその話を今日はしていきます.
@@ -180,6 +179,46 @@ __attribute__((weak)) int _write(int file, char *ptr, int len){
   return len;
 }
 ```
+(以下2020/05/25追記)
+SEGGER_RTT_Conf.h内で入出力に使うバッファの設定ができる.
+{{< highlight c "linenos=table,hl_lines= 11-12, linenostart=74">}}
+/*********************************************************************
+*
+*       Defines, configurable
+*
+**********************************************************************
+*/
+
+#define SEGGER_RTT_MAX_NUM_UP_BUFFERS             (3)     // Max. number of up-buffers (T->H) available on this target    (Default: 3)
+#define SEGGER_RTT_MAX_NUM_DOWN_BUFFERS           (3)     // Max. number of down-buffers (H->T) available on this target  (Default: 3)
+
+#define BUFFER_SIZE_UP                            (4 * 1024)  // Size of the buffer for terminal output of target, up to host (Default: 1k)
+#define BUFFER_SIZE_DOWN                          (16)    // Size of the buffer for terminal input to target from host (Usually keyboard input) (Default: 16)
+
+#define SEGGER_RTT_PRINTF_BUFFER_SIZE             (64u)    // Size of buffer for RTT printf to bulk-send chars via RTT     (Default: 64)
+
+#define SEGGER_RTT_MODE_DEFAULT                   SEGGER_RTT_MODE_NO_BLOCK_SKIP // Mode for pre-initialized terminal channel (buffer 0)
+{{< /highlight >}}
+
+これらはターミナルへの入出力に使われるバッファのサイズを定義している. 
+こんな感じでSEGGER_RTT.cに
+{{< highlight c "linenos=table, hl_lines= 12-13, linenostart=245" >}}
+/*********************************************************************
+*
+*       Static data
+*
+**********************************************************************
+*/
+//
+// RTT Control Block and allocate buffers for channel 0
+//
+SEGGER_RTT_PUT_CB_SECTION(SEGGER_RTT_CB_ALIGN(SEGGER_RTT_CB _SEGGER_RTT));
+
+SEGGER_RTT_PUT_BUFFER_SECTION(SEGGER_RTT_BUFFER_ALIGN(static char _acUpBuffer  [BUFFER_SIZE_UP]));
+SEGGER_RTT_PUT_BUFFER_SECTION(SEGGER_RTT_BUFFER_ALIGN(static char _acDownBuffer[BUFFER_SIZE_DOWN]));
+{{< /highlight >}}
+バッファが定義されている.
+
 
 # 終わりに
 -----------------------------
@@ -192,5 +231,7 @@ RTOSのタスクとかも追えたりできるそうなのでそこらへんも�
 ![JLink](/images/2019-03-30-JLink.jpeg)
 
 最後に
-
 SEGGERさん, Linux版のJLinkRTTViewerください.
+
+(以下2020/05/25追記)
+**Linux版にもJLinkRTTViewerが実装されました.** わーい.
