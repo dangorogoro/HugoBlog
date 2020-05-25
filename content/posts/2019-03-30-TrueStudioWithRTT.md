@@ -3,7 +3,7 @@ title: "TrueStudioでJ-Link RTTを使う"
 date: "2019-03-30"
 categories: ["STM32", "JLink"]
 cover: "/images/2019-07-12-JLinkRTT.svg"
-tags: ["STM32", "TrueStudio", J-Link"]
+tags: ["STM32", "TrueStudio", "J-Link"]
 slug: "TrueStudioWithRTT"
 aliases: "/TrueStudioWithRTT.html"
 ---
