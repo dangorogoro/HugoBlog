@@ -43,7 +43,8 @@ googleAnalytics = "UA-141196296-1"
 		#Enable share card
 		shareCard = true
 		#Use custom CSS
-		customCSS = ["/css/my_style.css"]
+		#customCSS = ["/css/my_style.css", "/css/syntax.css"]
+		customCSS = ["/css/syntax.css", "/css/my_style.css"]
 
 	[params.background]
 		colorBG = true
