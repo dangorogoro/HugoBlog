@@ -1,0 +1,18 @@
+/* table setting*/
+div.simple-table td, th {
+  border: 1px solid #ddd;
+  padding: 8px; 
+}
+div.simple-table tr:nth-child(odd){background-color: #f0e2c2;}
+
+div.simple-table tr:hover {background-color: #FFC0CB;}
+div.simple-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+div.simple-table table {
+  border-collapse: collapse;
+}
