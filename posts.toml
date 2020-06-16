@@ -1,10 +1,9 @@
 BaseURL = "https://blog.oino.li"
 title = "Dango Kajero"
 theme = "hugo-dream-plus"
-#themesDir = "../.."		#Don't use this, only for exampleSite
 paginate = 4
 enableRobotsTXT = true
-disqusShortname = "hugo-dream-plus"
+disqusShortname = "dream-plus"
 
 #Skip building these files
 ignoreFiles = ["content/404.md", "content/about.md", "content/cards/\\.*"]
@@ -44,7 +43,7 @@ googleAnalytics = "UA-141196296-1"
 		shareCard = true
 		#Use custom CSS
 		#customCSS = ["/css/my_style.css", "/css/syntax.css"]
-		customCSS = ["/css/syntax.css", "/css/my_style.css", "/css/my_table.css"]
+		customCSS = ["/css/syntax.css", "/css/my_style.css", "/css/my_table.css", "/css/amazon.css"]
 
 	[params.background]
 		colorBG = true
