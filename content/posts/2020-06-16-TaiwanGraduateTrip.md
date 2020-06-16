@@ -4,7 +4,7 @@ date: "2020-06-16"
 categories: ["旅行"]
 tags: ["旅行"]
 cover: "/images/2020-06-16-Taiwan.jpeg"
-slug: "FreeRTOSTips"
+slug: "TaiwanGraduateTrip"
 ---
 この前卒業旅行で台湾に行ったので書きます.
 
