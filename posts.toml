@@ -1,7 +1,7 @@
 BaseURL = "https://blog.oino.li"
 title = "Dango Kajero"
 theme = "hugo-dream-plus"
-paginate = 4
+paginate = 6
 enableRobotsTXT = true
 disqusShortname = "dream-plus"
 
@@ -42,7 +42,6 @@ googleAnalytics = "UA-141196296-1"
 		#Enable share card
 		shareCard = true
 		#Use custom CSS
-		#customCSS = ["/css/my_style.css", "/css/syntax.css"]
 		customCSS = ["/css/syntax.css", "/css/my_style.css", "/css/my_table.css", "/css/amazon.css"]
 
 	[params.background]
@@ -55,6 +54,7 @@ googleAnalytics = "UA-141196296-1"
 	#Categories settings
 	[params.categories]
 		enabled = true
+
 [social]
 	email = "dangorogoro0802[α]gmail"
 	github = "dangorogoro"
