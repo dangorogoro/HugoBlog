@@ -43,6 +43,7 @@ googleAnalytics = "UA-141196296-1"
 		shareCard = true
 		#Use custom CSS
 		customCSS = ["/css/syntax.css", "/css/my_style.css", "/css/my_table.css", "/css/amazon.css"]
+		amazonJpAffiliate = "dng04-22"
 
 	[params.background]
 		colorBG = true
