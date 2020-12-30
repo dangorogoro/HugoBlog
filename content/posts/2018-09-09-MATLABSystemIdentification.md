@@ -52,13 +52,13 @@ aliases: "/MATLABSystemIdentification.html"
 まず, システム同定を行う対象はこちらの私が作っているクラシックマウスのNigLacertoです. 今回はこのロボットに対して, 並進方向及び回転方向についてモデリングを行います.
 
 ## 仕様  
-
+{{< my_table class = "simple-table" >}}
   データ                  |  
 --------------------------|--------------------------------------
   モーター & エンコーダー | FAULHABER 1717-006SR & IEH2-1024|  
   ギア比                  | 13 : 40
   重さ                    | 115g 
-
+{{< /my_table>}}
 ![robot](/images/2018-09-05-NigLacerto.jpg)
 
 **実験データから同定する際にはSystemIdentification Tool Boxが必要です.**

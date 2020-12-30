@@ -17,20 +17,23 @@ aliases: "/Dangoromouse2weiPart1.html"
 [回路図](/pdfs/2018-05-19-circuit.pdf)
 
 ## 仕様  
-| データ | |  
-| ------ | ------------------------|  
-| サイズ | 78(W) * 75(L) * 23(H)mm |  
-| 重さ   | 86g |  
-| ギア比 | 9:44|  
-| ピニオンギア | 9T Module 0.5 [(Helimonster)](http://helimonster.jp/?pid=39331197)|  
-| モーター | FAULHABER 1717-006SR & IEH2-1024|  
-| バッテリー | Hyperion 1cell 120mAh * 2 |  
-| マイコン | STM32F405RG |  
-| IMU | ICM-20602|  
-| モータードライバー | DRV8835 * 1 |
-| 赤外線LED | VLSY5850 |  
-| フォトダイオード | SFH213FA |  
+{{< my_table class = "simple-table" >}}
 
+ データ | 
+ ------ | ------------------------
+ サイズ | 78(W) * 75(L) * 23(H)mm 
+ 重さ   | 86g 
+ ギア比 | 9:44
+ ピニオンギア | 9T Module 0.5 [(Helimonster)](http://helimonster.jp/?pid=39331197)
+ モーター | FAULHABER 1717-006SR & IEH2-1024
+ バッテリー | Hyperion 1cell 120mAh * 2 
+ マイコン | STM32F405RG 
+ IMU | ICM-20602
+ モータードライバー | DRV8835 * 1 |
+ 赤外線LED | VLSY5850 
+ フォトダイオード | SFH213FA 
+
+{{< /my_table>}}
 ## 3DCADデータ
 Onshape上で作っているので全部公開されてます(わーい)(めっちゃ雑なのは許して...)  
 [3DCADデータ](https://cad.onshape.com/documents/c2a612fa5d9512da2c2ba9ba/w/37291b77c13a207be24fd32c/e/8fe1776ea00df1f63d9a7140)
