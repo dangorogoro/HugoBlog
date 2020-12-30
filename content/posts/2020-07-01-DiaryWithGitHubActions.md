@@ -7,7 +7,7 @@ cover: "/images/2020-07-02-ActionsLogo.png"
 slug: "DiaryWithGitHubActions"
 ---
 
-## これ何？
+# これ何？
 ---
 最近日記をつけ始めました. (diary.oino.li) 日記もブログと同様にHugoで生成しています.
 日記の方は真面目に書かない(書きたいことを適当に書く)ので, プラグインとか特に入れずに文字だけMarkdownで起こせばそのままAWSに置いてるサーバーに反映させられたらといいなーと思ったのでGitHub Actionsというのを使ってみました.
@@ -17,7 +17,7 @@ slug: "DiaryWithGitHubActions"
 {{< tweet 1268891509203468290 >}}
 
 今までこういったCIとか全く使ったことが無かったですが, なんとか動かせたのでその時の作業の備忘録を書いておきます.
-## やったこと
+# やったこと
 ---
 全体の大まかな流れはこんな感じです.
 1. ローカルの環境でMarkdownを書く.
@@ -27,7 +27,7 @@ slug: "DiaryWithGitHubActions"
 
 主にこちらの記事を参考にしました. ありがとうございます.
 (https://qiita.com/kz_morita/items/690b367067666fddb562)
-## GitHub Actionsとは
+# GitHub Actionsとは
 ---
 GitHubの提供するCI / CD環境です.
 
@@ -51,7 +51,7 @@ WindowsやmacOSのランナー上で実行されるジョブの動作時間は
 詳しくはこちらをご覧ください.
 (https://docs.github.com/ja/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions)
 
-## Actionsの作成
+# Actionsの作成
 ---
 
 Actionsを作成したいリポジトリに行くと上の方にこんな感じでメニューがあるのでクリックして新しくworkflowを作成します.
@@ -109,7 +109,7 @@ jobs:
 
 ざっくり解説していきます.
 
-### トリガー
+## トリガー
 
 {{< highlight yaml "linenos=table, linenostart=2" >}}
 on:
@@ -119,7 +119,7 @@ on:
 {{< / highlight >}}
 Actionsが実行されるためのトリガーの設定です.
 
-### Checkout
+## Checkout
 {{< highlight yaml "linenos=table, hl_lines=4, linenostart=12" >}}
     - name: Checkout
       uses: actions/checkout@v1
@@ -132,7 +132,7 @@ Actionsが実行されるためのトリガーの設定です.
 (https://github.com/actions/checkout)
 submodules について記述することでsubmoduleもワークフローでアクセスできるようになります. 私はHugoのテーマをsubmoduleで管理してるんですが, これを忘れて無を生成しました.
 
-### デプロイ
+## デプロイ
 {{< highlight yaml "linenos=table, hl_lines=8-12, linenostart=25" >}}
     - name: Generate ssh key
       run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key
@@ -166,7 +166,7 @@ Actionの実行結果はこんな感じでログを見たりすることがで�
 ![Images](/images/2020-07-02-Result.png)
 
 嬉しいね.
-## おわりに
+# おわりに
 ---
 記念すべき初めてのGitHub ActionsはGitHubが落ちて失敗しました.(そんなことある？？？)
 GitHub Actionsが上手く動かなかったらGitHub Status(https://www.githubstatus.com/)を見てみると良いです.

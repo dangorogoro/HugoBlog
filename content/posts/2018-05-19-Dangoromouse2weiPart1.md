@@ -10,13 +10,13 @@ aliases: "/Dangoromouse2weiPart1.html"
 自己紹介のところでマイクロマウスを作っていると言って, 記事を書いていなかった...  
 というわけで2017年度のマイクロマウスの大会で私が作っていたマウスを紹介します.
 
-## だんごろまうす2wei
+# だんごろまうす2wei
 ![mouse](/images/2018-05-19-mouse.jpg)
 回路図はこちらです. 上の充電基板とICM-20602は異種面付けでくっつけました.
 
 [回路図](/pdfs/2018-05-19-circuit.pdf)
 
-## 仕様  
+# 仕様  
 {{< my_table class = "simple-table" >}}
 
  データ | 
@@ -34,11 +34,11 @@ aliases: "/Dangoromouse2weiPart1.html"
  フォトダイオード | SFH213FA 
 
 {{< /my_table>}}
-## 3DCADデータ
+# 3DCADデータ
 Onshape上で作っているので全部公開されてます(わーい)(めっちゃ雑なのは許して...)  
 [3DCADデータ](https://cad.onshape.com/documents/c2a612fa5d9512da2c2ba9ba/w/37291b77c13a207be24fd32c/e/8fe1776ea00df1f63d9a7140)
 
-## プログラム
+# プログラム
 プログラムはGitHubの方で全部公開しています.(リンカスクリプトや探索周りは[idさん](http://idken.net/)から大いなる協力を得ています. ありがとうございます.)  
 [GitHub](https://github.com/dangorogoro/Dangoromouse/tree/2weidev)
 
