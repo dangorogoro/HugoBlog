@@ -1,1 +1,8 @@
-<meta name="thumbnail" content="{{.Site.Params.author.avatar}}"/>
+{{ $eyecatch_image := findRE "<img.*?src=([^>]*)?>" .Content 1 }}
+{{ if ge (len $eyecatch_image ) 1 }}
+{{ range $eyecatch_image }}
+{{ . | safeHTML }}
+{{ end }}
+{{ else }}
+<img src="/images/icon.jpeg">
+{{ end}}
