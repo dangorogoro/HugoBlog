@@ -5,6 +5,7 @@ categories: ["FPGA"]
 tags: ["FPGA", "Tang Nano ", "Chisel"]
 cover: "/images/2020-12-30-Top.jpeg"
 slug: "ChiselWithTangNanoLED"
+share_img: "/images/2020-12-30-Top.jpeg"
 mathjax: true
 ---
 
