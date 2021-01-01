@@ -3,6 +3,7 @@ title: "旅程と宿手配は現地で！？台湾へ卒業旅行に行く"
 date: "2020-06-16"
 categories: ["旅行"]
 tags: ["旅行"]
+share_img: "/images/2020-06-16-Taiwan.jpeg"
 cover: "/images/2020-06-16-Taiwan.jpeg"
 slug: "TaiwanGraduateTrip"
 ---

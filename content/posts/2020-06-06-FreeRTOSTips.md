@@ -4,6 +4,7 @@ date: "2020-06-06"
 categories: ["マイコン"]
 tags: ["FreeRTOS", "STM32", "マイコン"]
 cover: "/images/2020-06-06-FreeRTOSLogo.jpg"
+share_img: "/images/2020-06-06-FreeRTOSLogo.jpg"
 slug: "FreeRTOSTips"
 ---
 # FreeRTOSの導入とTips

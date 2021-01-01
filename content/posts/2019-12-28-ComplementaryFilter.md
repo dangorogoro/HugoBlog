@@ -4,6 +4,7 @@ date: "2019-12-28"
 categories: ["マイクロマウス"]
 tags: ["マイクロマウス", "制御"]
 cover: "/images/2019-12-28-complementary.png"
+share_img: "/images/2019-12-28-complementary.png"
 slug: "ComplementaryFilter"
 mathjax: true
 ---
