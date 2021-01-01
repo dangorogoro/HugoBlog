@@ -1,12 +1,12 @@
 ---
 title: "Linuxで動く3DCAD Onshapeのお話"
-cover: "/images/Onshape.png"
+cover: &cover "/images/Onshape.png"
+share_img: *cover
 date: "2018-01-15"
 categories: ["Onshape"] 
 tags: ["Onshape"]
 slug: "AboutOnshape"
 aliases:  "/AboutOnshape.html"
-aliases: "/ShenZhenTrip2018.html"
 ---
 
 最初の記事は今使ってる3DCAD製作支援サービス, Onshapeの話をしようと思います.

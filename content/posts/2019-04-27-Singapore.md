@@ -3,8 +3,8 @@ title: "シンガポールへ聖地巡礼のついでにTOEICを受ける"
 date: "2019-04-27"
 categories: ["旅行"]
 tags: ["旅行"]
-cover: "/images/2019-04-27-Top3.jpeg"
-
+cover: &cover "/images/2019-04-27-Top3.jpeg"
+share_img: *cover
 slug: "Singapore"
 aliases: "/Singapore.html"
 ---

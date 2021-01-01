@@ -4,7 +4,8 @@ date: "2020-07-02"
 categories: ["GitHub"]
 tags: ["GitHub", "Hugo", "GitHub Actions"]
 share_img: "/images/2020-07-02-ActionsLogo.png"
-cover: "/images/2020-07-02-ActionsLogo.png"
+cover: &cover "/images/2020-07-02-ActionsLogo.png"
+share_img: *cover
 slug: "DiaryWithGitHubActions"
 ---
 

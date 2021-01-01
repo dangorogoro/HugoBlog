@@ -3,8 +3,8 @@ title: "技術書典9の振り返りと女学院の話"
 date: "2020-09-26"
 categories: ["執筆"]
 tags: ["技術書典", "女学院", "LaTeX"]
-share_img: "/images/2020-09-26-title.jpeg"
-cover: "/images/2020-09-26-title.jpeg"
+cover: &cover "/images/2020-09-26-title.jpeg"
+share_img: *cover
 slug: "TechBookFes9"
 mathjax: "True"
 ---

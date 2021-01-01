@@ -1,7 +1,8 @@
 ---
 title: "だんごろまうす2weiの紹介 Part1"
 date: "2018-05-19"
-cover: "/images/2018-05-19-mouse.jpg"
+cover: &cover "/images/2018-05-19-mouse.jpg"
+share_img: *cover
 categories: ["ロボット"]
 tags: ["電子工作", "マイクロマウス", "STM32"]
 slug: "Dangoromouse2weiPart1"

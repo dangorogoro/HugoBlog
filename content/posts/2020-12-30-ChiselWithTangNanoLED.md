@@ -3,9 +3,9 @@ title: "Chiselを使ってTang NanoでLチカする"
 date: "2020-12-30"
 categories: ["FPGA"]
 tags: ["FPGA", "Tang Nano ", "Chisel"]
-cover: "/images/2020-12-30-Top.jpeg"
+cover: &cover "/images/2020-12-30-Top.jpeg"
 slug: "ChiselWithTangNanoLED"
-share_img: "/images/2020-12-30-Top.jpeg"
+share_img: *cover
 mathjax: true
 ---
 

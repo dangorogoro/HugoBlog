@@ -1,7 +1,8 @@
 ---
 title: "セキュリティ・キャンプに参加しました"
 date: "2018-08-28"
-cover: "/images/2018-08-18-Day1Where2.jpg"
+cover: &cover "/images/2018-08-18-Day1Where2.jpg"
+share_img: *cover
 categories: ["セキュリティ・キャンプ"]
 tags: ["セキュリティ・キャンプ"]
 slug: ["SecCampReport"]

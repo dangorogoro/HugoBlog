@@ -2,7 +2,8 @@
 title: "独立2輪車型のロボットにKanayama Control Methodを実装して軌道追従をする"
 date: "2018-12-13"
 categories: ["マイクロマウス"]
-cover: "/images/2018-12-14-ChasingImage.jpeg"
+cover: &cover "/images/2018-12-14-ChasingImage.jpeg"
+share_img: *cover
 tags: ["MATLAB","ロボット", "制御","マイクロマウス"]
 slug: "KanayamaControlMethod"
 aliases: "/KanayamaControlMethod.html"

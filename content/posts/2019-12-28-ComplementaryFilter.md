@@ -3,8 +3,8 @@ title: "マイクロマウス(対向二輪車)で相補フィルターを使っ�
 date: "2019-12-28"
 categories: ["マイクロマウス"]
 tags: ["マイクロマウス", "制御"]
-cover: "/images/2019-12-28-complementary.png"
-share_img: "/images/2019-12-28-complementary.png"
+cover: &cover "/images/2019-12-28-complementary.png"
+share_img: *cover
 slug: "ComplementaryFilter"
 mathjax: true
 ---

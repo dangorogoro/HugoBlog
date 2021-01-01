@@ -2,7 +2,8 @@
 title: "MATLABでマイクロマウスの機体をシステム同定してPIDチューニングする."
 date: "2018-09-09"
 categories: ["ロボット"]
-cover: "/images/2018-09-22-PIDgain.png"
+cover: &cover "/images/2018-09-22-PIDgain.png"
+share_img: *cover
 tags: ["マイクロマウス", "MATLAB"]
 slug: :MATLABSystemIdentification"
 aliases: "/MATLABSystemIdentification.html"
