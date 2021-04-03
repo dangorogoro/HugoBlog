@@ -31,7 +31,7 @@ googleAnalytics = "UA-141196296-1"
 	[params.author]
 		name = "dangorogoro"
 		description = "やったこととか書いていきます"
-		avatar = "/images/icon.jpeg"
+		avatar = "/images/icon.jpg"
 		motto = "これからは全てが良くなるよ"
 
 	[params.features]
