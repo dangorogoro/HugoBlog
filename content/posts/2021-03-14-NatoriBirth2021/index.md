@@ -1,6 +1,6 @@
 ---
 title: "さなのばくたん。-ていねいなお誕生日会-に行った"
-date: "2021-04-02"
+date: "2021-04-04"
 categories: ["オタク"]
 tags: ["ポエム", "名取さな"]
 cover: &cover "/images/2021-03-14-NatoriCover.jpeg"
