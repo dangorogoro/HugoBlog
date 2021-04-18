@@ -19,7 +19,7 @@ jobs:
           sudo dpkg -i hugo_${HUGO_VERSION}_Linux-64bit.deb
           hugo version
       env:
-          HUGO_VERSION: '0.59.0'
+          HUGO_VERSION: latest
     - name: Build hugo
       run: hugo
     - name: Generate ssh key
