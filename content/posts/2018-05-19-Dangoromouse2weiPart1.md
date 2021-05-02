@@ -17,7 +17,8 @@ aliases: "/Dangoromouse2weiPart1.html"
 
 [回路図](/pdfs/2018-05-19-circuit.pdf)
 
-# 仕様  
+# 仕様
+
 {{< my_table class = "simple-table" >}}
 
  データ | 

@@ -7,7 +7,6 @@ cover: &cover "/images/2021-03-14-NatoriCover.jpeg"
 slug: "NatoriBirth2021"
 share_img: *cover
 mathjax: true
-draft: false
 ---
 
 {{<figure src="/images/2021-03-14-NatoriCover.jpeg" alt="natori1">}}
