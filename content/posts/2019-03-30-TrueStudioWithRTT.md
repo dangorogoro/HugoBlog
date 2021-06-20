@@ -9,7 +9,7 @@ slug: "TrueStudioWithRTT"
 aliases: "/TrueStudioWithRTT.html"
 ---
 
-# J-Link TrueStudio 始めます
+## J-Link TrueStudio 始めます
 -----------------------------
 皆さんはSTM32マイコンを開発するとき, 開発環境は何を使っていますか？
 私は以前はVim + Makefile + GDB + ST-Linkみたいな構成で開発していたのですが,
@@ -21,7 +21,7 @@ aliases: "/TrueStudioWithRTT.html"
 などの理由からSTMicroが以前買収したAtollic社から出されているTrueStudioがSTM32をサポートしているのでそれとJ-Linkを使って開発していこうと思いました.
 使った感想としては**文明の力すごいな**という感じですが, その中でも特に**J-Link RTT**を気に入ったのでその話を今日はしていきます.
 
-# そもそもJ-Linkとは
+## そもそもJ-Linkとは
 -----------------------------
 J-LinkはSEGGER社が開発しているマイコン向けのデバッガです.
 [SEGGER: J-Link Debug Probes](https://www.segger.com/products/debug-probes/j-link/)
@@ -46,7 +46,7 @@ PICマイコンを使うときはPICkit, STM32マイコンを開発するとき�
 詳細は公式HPやidさんのブログ,
 [超便利 最強デバッガ J-Link ](http://idken.net/posts/2017-08-31-jlink/ )
 に詳しく書いてるのでぜひそちらをご覧ください.
-# J-Link RTT って何？
+## J-Link RTT って何？
 -----------------------------
 RTTはReal Time Transferの略で, SWD/JTAGの線上でUART通信みたいにPCと双方向にデータのやり取りができます.
 同じようなことができるものとしてsemihostingというものがあると思いますが, RTTはsemihostingより**1万倍速い**ので使わない手はないですね.
@@ -81,7 +81,7 @@ RTTはReal Time Transferの略で, SWD/JTAGの線上でUART通信みたいにPC�
 便利ですね.
 以下でJ-Link RTTを使うためのセットアップの話をしていきます.
 
-# セットアップ
+## セットアップ
 -----------------------------
 私のPCの環境はArch Linuxなのでそれをベースに作業していきます.
 とりあえず, TrueStudioやSEGGERのツール群, CubeMXをインストールします.
@@ -161,7 +161,7 @@ $ JLinkRTTLogger
 ```
 を実行すると直接ファイル内に書き出してくれます.
 
-# Tips
+## Tips
 以下にRTTを使ってるときに得られた知見です.
 
 * デバッガに繋いでないときはTargetマイコンの内部に送信データがバッファリングされる.
@@ -221,7 +221,7 @@ SEGGER_RTT_PUT_BUFFER_SECTION(SEGGER_RTT_BUFFER_ALIGN(static char _acDownBuffer[
 バッファが定義されている.
 
 
-# 終わりに
+## 終わりに
 -----------------------------
 いかがでしたか.(これが言いたかった)
 

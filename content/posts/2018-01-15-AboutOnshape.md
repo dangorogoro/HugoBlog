@@ -11,7 +11,7 @@ aliases:  "/AboutOnshape.html"
 
 最初の記事は今使ってる3DCAD製作支援サービス, Onshapeの話をしようと思います.
 
-# Linux 3DCADが 動かない
+## Linux 3DCADが 動かない
 ---
 私は普段使いのノートPCにはArch LinuxとWindowsというOSをデュアルブートしていて, 作業は専らArch Linuxの方でやっています.  
 何不自由ないLinuxライフを送っている私ですが, 唯一困るのはロボット製作をするときに使う3DCADソフトです. というのも  
@@ -27,7 +27,7 @@ aliases:  "/AboutOnshape.html"
 
 などが挙げられます.環境構築で時間を使いたくなかったし, Linuxだけで作業を完結させたかったのでOnshapeを使ってみました.
 
-# Onshapeを使う
+## Onshapeを使う
 ---
 OnshapeのHPです.  
 [https://www.onshape.com/](https://www.onshape.com/)
@@ -39,13 +39,13 @@ OnshapeはWebブラウザで使える無料の3DCAD支援サービスです. ア
 また, データはサーバ上にあって, AndroidやiPhoneで動作するアプリケーションもあるのでどこでも作業することができます.  
 作ったデータに関してですが, 基本的に制作物は誰でも見られるよう公開されているので, 他の人の制作物も簡単に見て学ぶことができます. (課金で非公開にすることも可)  
 ブランチ機能もあり, 制作物の状態をGitのように管理できるので便利です.
-## 使い方
+### 使い方
 基本的にはスケッチ書いて押し出したり, 回転させたりするとできます.  
 他の3DCADソフトと使い方はあまり変わらないのでここで言及しません.  
 TutorialやVideo群がここにあるので参考にしてみるといいと思います.  
 [https://www.onshape.com/video](https://www.onshape.com/video)
 
-# FeatureScript
+## FeatureScript
 ---
 最近, FeatureScriptという機能が公開されました.  
 [https://www.onshape.com/featurescript](https://www.onshape.com/featurescript)  
@@ -53,7 +53,7 @@ TutorialやVideo群がここにあるので参考にしてみるといいと思�
 また, 人の書いたスクリプトも自前のStudio上で動作させることができます.  
 今回はFeatureScriptで書かれたcustom featureの一つ, SpurGearの使い方を紹介しようと思います. (これが出てきたのでブログを書こうと思いました.)  
 
-## SpurGear
+### SpurGear
 ---
 このスクリプトはOnshapeの中の人が作ったもので,インボリュート曲線を使ったギアを作ることができます.  
 私はマイクロマウスというロボット競技に参加していて, ギアを設計するという機会が何度かあるのですが, 今までは  
@@ -77,7 +77,7 @@ TutorialやVideo群がここにあるので参考にしてみるといいと思�
 こんなふうにパラメータをいじってあげれば簡単にギアが作れます.  
 ![GearSample](/images/2018-01-23-071808_888x559_scrot.png)
 
-# まとめ
+## まとめ
 ---
 フルクラウドで動いてるので大きい物を作ろうとすると固まったりしますが, 個人で何かちょっと設計がしたい, Linuxでも3DCADが使いたい(ココ重要!)という方にはOnshapeはとても便利だと思います.  
 ぜひ使ってみてください.

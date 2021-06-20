@@ -8,20 +8,20 @@ slug: "ChiselWithTangNanoLCD"
 share_img: *cover
 mathjax: true
 ---
-# 概要
+## 概要
 ---
 Chiselを使ってTang Nano付属のLCDを光らせました. メモを残します.
 
 {{<tweet 1326484313508962304>}}
 
-# はじめに
+## はじめに
 ---
 Chiselはデジタル回路設計用のハードウェアデザイン言語です. 以前チュートリアルを書いたので, そちらをご覧ください. 
 [Chiselを使ってTang NanoでLチカする](/posts/2020-12-30-ChiselWithTangNanoLED.md)
 
 LCDはTang Nano FPGA開発用として[Sipeed](https://jp.seeedstudio.com/5-Inch-Display-for-Sipeed-Tang-Nanno-p-4301.html)で売られていたものを使いました. [秋月](https://akizukidenshi.com/catalog/g/gM-14873/)でも売られています.
 
-# 設定
+## 設定
 まず, 最初にSeeed公式がexampleコードを公開しているので, それを見てみました.
 
 https://github.com/sipeed/Tang-Nano-examples
@@ -32,7 +32,7 @@ https://tangnano.sipeed.com/en/examples/2_lcd.html
 
 VGAを使って画面の制御を行っているので, まずはVGAの信号をChiselで実装しました.
 
-## VGAの設定
+### VGAの設定
 VGAでは水平同期信号(HSYNC)と垂直同期信号(VSYNC)のタイミングに合わせてピクセルの値をRGBで設定します.
 
 今回は上のドキュメントやコードを参考にタイミングやパラメータなどを合わせました.
@@ -44,7 +44,7 @@ Verilogで書かれたコードをChiselに変換するしてるだけなので,
 
 という感じです.
 
-## LCDのクロック設定(BlackBoxの使用)
+### LCDのクロック設定(BlackBoxの使用)
 次にさっそくLCDの描画を行いたいところですが, LCDにはクロックとして(上記の設定では)33.33MHzを供給する必要があります.
 
 これはTang NanoのIPを利用することで生成できますがChiselからではそういったコードを生成することはできません.(それはそう)
@@ -63,7 +63,7 @@ https://github.com/dotcypress/tang-nano-lcd
 
 {{<gist dangorogoro e875b92b6492a92de5c0430b407362d8>}}
 
-## LCDの描画
+### LCDの描画
 先ほど作成したVGAModuleから得られた座標とRGBのピンを用いてLCDの描画を行っていきます。
 今回は単純に市松模様を描画しました。
 コードはこんな感じです. (条件分岐はかなり適当です.
@@ -87,7 +87,7 @@ $sbt 'test:runMain lcd.LCDMain'
 今回作成したコードはGitHubに置いてるので必要があれば見てください.
 
 https://github.com/dangorogoro/Tang-Nano-With-Chisel
-## ピン設定と書き込み
+### ピン設定と書き込み
 生成したファイル(LCDTopWrapper.vとrpll.v)をGowinに持って行ってビルドします.
 
 ピン配置は以下のように設定しました.
@@ -114,5 +114,5 @@ io_xtal | 35 |
 
 {{<tweet 1326484313508962304>}}
 
-# おわりに
+## おわりに
 Chiselを使ってTang Nanoに繋げたLCDへ市松模様を表示できました. ここには書いてませんが, 開発中はChisel側でテストを書いてデバッグしていたのでとてもスムーズにできました. 今後もいじっていきたいですね.

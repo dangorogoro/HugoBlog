@@ -9,11 +9,11 @@ share_img: *cover
 mathjax: true
 ---
 
-# はじめに
+## はじめに
 ---
 Chiselを用いてTang NanoというFPGAでLチカしてみたという話です. 
 
-# Chiselとは
+## Chiselとは
 ---
 **Chisel(Constructing Hardware in a Scala Embedded Language)**はデジタル回路設計用の**ハードウェアデザイン言語(Hardware Design Language)**(いわゆるVerilogとかをさす**Hardware Design Language**とは違うので注意)です.
 
@@ -35,7 +35,7 @@ ChiselはScalaの組み込みDSLとして作られているため, Scalaとい�
 Chiselがどんなものかもっと知りたい人は公式HPを見るのがおすすめです. https://www.chisel-lang.org/
 
 また, Rocket CoreやBOOMなどに代表されるRISC-VのCPUコア実装がChiselで書かれています. デジタル回路設計のシーンがChiselを中心に少しずつ動いてる気配がするのでこれからチェックしていきたいです.
-# Tang Nanoとは
+## Tang Nanoとは
 ---
 Sipeed社が出しているFPGAボードです. GW1N-1というチップが載っています. 大きな特徴は以下の通り.
 
@@ -47,20 +47,20 @@ Seeedで買えるのでどうぞ.(https://jp.seeedstudio.com/Sipeed-Tang-Nano-FP
 
 ![Images](/images/2020-12-30-SipeedTangNano.png)
 
-# 開発環境構築
+## 開発環境構築
 ---
 次に開発環境を構築していきます.
-## 筆者の開発環境
+### 筆者の開発環境
 私はWindows + VSCode + WSL2で諸々の開発を行いました. ただ, WSL2はUSBを2020/12/30現在まだサポートしていないので, 論理合成やTang-Nanoへの書き込みはWindowsのローカルに**GOWIN**というSipeedが出している開発環境を入れました.
-## Chisel
+### Chisel
 GitHubのページに沿って開発環境を構築します.(https://github.com/chipsalliance/chisel3/blob/master/SETUP.md)
 Dockerが使えるならそれもいいと思います.
 
-### テンプレート
+#### テンプレート
 開発に当たってテンプレートとして公式が出しているものを利用しました.(https://github.com/freechipsproject/chisel-template)
 
 ちなみに私のコードはこちらにおいてあります. https://github.com/dangorogoro/Tang-Nano-With-Chisel
-## Tang-Nano(GOWIN)
+### Tang-Nano(GOWIN)
 公式ドキュメントに沿って開発環境を構築します.(http://tangnano.sipeed.com/en/get_started/install-the-ide.html)
 
 ライセンスは2種類あって
@@ -70,7 +70,7 @@ Dockerが使えるならそれもいいと思います.
 
 がありますが, 前者は**MACアドレスを書き換えてライセンスファイルを導入する**というあまりに迫力のある方法だったので2番目の方法で行いました. こっちがオススメです.
 
-# 実際に書いていく
+## 実際に書いていく
 ---
 実際に書いていきます. まずはこんな感じのフォルダー構成を作ります.
 ``` 
@@ -94,7 +94,7 @@ Dockerが使えるならそれもいいと思います.
 ```
 Chiselのチュートリアルは公式に用意されているのでそちらもご覧ください. (https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master)
 
-## Class
+### Class
 まずはメインとなるLチカのコードの方を書いていきます.
 {{< gist dangorogoro 02f1703a16829eaff188c50601680930 >}}
 
@@ -111,7 +111,7 @@ Chiselのチュートリアルは公式に用意されているのでそちら�
 これでは設定ができなくてちょっと困るので**RawModule**を使うことで明示的に**Clock**や**Reset**を使えるようにします. 33行目に**withClockAndReset**にてアクティブローになるようにインスタンスを作成します.
 このとき, 24 * 1000 * 1000と設定しているのはTang Nanoの上に載ってるクロックの値をアップカウンタの最大値として使っているという意味です.
 
-## テスト
+### テスト
 これでモジュールを作成することができました. 早速, Verilogコードを生成してと行きたいところですが本当にこのままで動くの確認するためにテストコードを書く必要があります. それがLEDTest.scalaになります.
 {{< gist dangorogoro f211d33d377622dcfa5461ad5e8b1377 >}}
 
@@ -136,7 +136,7 @@ $sbt 'test:runMain led.LEDMain'
 
 Verilogコードは機械的に生成されているので見てもウーン分からん！となりますが, このコードをボードの開発環境にコピペしていきましょう.
 
-## Tang Nanoへの書き込み
+### Tang Nanoへの書き込み
 GOWINを使ったココらへんの処理はいろんな方が書いてますので割愛します. それぞれのピン設定だけ明記しておくと
 {{< my_table class = "simple-table" >}}
 Port | Pin | Description  
@@ -152,17 +152,17 @@ io.reset  | Pin15 | Reset
 {{< tweet 1318575521173655552 >}}
 
 これでHDLに触らず, FPGAでLチカできました. やったね.
-# Chiselを使った感想
+## Chiselを使った感想
 ---
 Chiselを使ってていいなと思ったとこや苦労したことについて書きます. 皆さんの判断材料になれば幸いです.
 
-## 嬉しいとこ
-### Scalaの上でデジタル回路設計ができる
+### 嬉しいとこ
+#### Scalaの上でデジタル回路設計ができる
 これが一番嬉しいところだと思います. モダンな言語に付随する様々な機能を使って開発ができるので, 泥沼なソースコードを書かなくてはいけないといったことを回避しつつ, 抽象度を上げてモジュールやモジュール同士の処理を書くことができるのが嬉しいです.
-### テストの機能が標準である
+#### テストの機能が標準である
 単体テストがすごく簡単に書けるので開発のスピードがアップしたように思います.
-## 苦労したこと
-### 2つのパラダイムが詰め込まれている
+### 苦労したこと
+#### 2つのパラダイムが詰め込まれている
 いわゆる計算機的な上から順に処理をしていく箇所と回路的に同時に処理が発生する箇所の2つのパラダイムを意識して書いていく必要があるので時折, 戸惑いました.
 
 例えば, マイコンのプログラムを書くときに反転の処理を書こうとすると
@@ -173,7 +173,7 @@ pin = !pin;
 
 そのため, これらを意識しながら書く必要があるので慣れるまで結構戸惑いました.
 
-# まとめ
+## まとめ
 ---
 Chiselを使ってHDLを触らずにFPGAでLチカができました. 上述のGoogleの発表でもChiselを習得するには
 
