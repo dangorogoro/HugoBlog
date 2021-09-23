@@ -27,6 +27,8 @@ googleAnalytics = "UA-141196296-1"
 	contentType = "posts"
 	
 	siteStartYear = 2018
+	
+	amazonJpAffiliate = "kinak0pypy-22"
 
 	[params.author]
 		name = "dangorogoro"
@@ -43,7 +45,6 @@ googleAnalytics = "UA-141196296-1"
 		shareCard = true
 		#Use custom CSS
 		customCSS = ["/css/syntax.css", "/css/my_style.css", "/css/my_table.css", "/css/amazon.css"]
-		amazonJpAffiliate = "kinak0pypy-22"
 
 	[params.background]
 		colorBG = true
