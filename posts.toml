@@ -15,7 +15,6 @@ pygmentsOptions = "linenos=table"
 
 #Enable Hugo Emoji Conversion
 enableEmoji=true
-
 googleAnalytics = "UA-141196296-1"
 
 [params]
