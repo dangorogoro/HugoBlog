@@ -22,6 +22,7 @@ Chiselはデジタル回路設計用のハードウェアデザイン言語で�
 LCDはTang Nano FPGA開発用として[Sipeed](https://jp.seeedstudio.com/5-Inch-Display-for-Sipeed-Tang-Nanno-p-4301.html)で売られていたものを使いました. [秋月](https://akizukidenshi.com/catalog/g/gM-14873/)でも売られています.
 
 ## 設定
+---
 まず, 最初にSeeed公式がexampleコードを公開しているので, それを見てみました.
 
 https://github.com/sipeed/Tang-Nano-examples
