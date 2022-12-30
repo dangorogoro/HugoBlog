@@ -1,18 +1,27 @@
 
-### Who am I
-だんごぼっと(@dango_bot)です.
-### What I do
-大学生をやってます. ロボット(マイクロマウス)制作や, 電子工作をしたりしてます.
+## About Me
 
-連絡は
+### Contact
+Kanagawa, Japan
 
-**MAIL**  dangorogoro0802[:dango:].gmail
+**MAIL**:  info[:dango:]oino.li
 
-**Twitter** @dango_bot
+**Twitter**: [@dango_bot](https://twitter.com/dango_bot)
 
-**GitHub** dangorogoro
+**GitHub**: [dangorogoro](https://github.com/dangorogoro)
 
-### About this 
-作ったものや知見に備忘録, そんなものを書いていきます.
+### Interest
+- Robotics
+- Computer Vision
+- Control and Systems Theory
+- Signal Processing
+  - Audio Signal Processing
+- Embedded Systems
+- 生活
+  - 映画、料理
+- 愛
+  - 人
+
+
 ### What is oino in the domain
 **お祈り** 🙏
