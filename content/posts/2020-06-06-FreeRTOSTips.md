@@ -99,11 +99,11 @@ xTaskCreate(
 * [FreeRTOSのTaskにC++のメンバ関数を割り当てる](https://www.kerislab.jp/posts/2017-09-27-freertos-member/)
 
 皆も歌おう.
-{{< tweet 1259794553374048256 >}}
+{{<tweet user="dango_bot" id="1259794553374048256">}}
 
 ### ESP32のpthreadの実装が賢い
 ----
-{{< tweet 1259794909852102658 >}}
+{{<tweet user="dango_bot" id="1259794909852102658">}}
 esp32-idfではpthread内の実装がFreeRTOSをラップしたものなのですごい. これはstd::threadとかがマイコンで動作するということです.
 ただ, std::threadでは
 * タスクの優先順位が決められない
@@ -171,7 +171,7 @@ CubeMXではミドルウェアを選択してFreeRTOS(正しくはFreeRTOSをCMS
 (https://github.com/dangorogoro/Dangoromouse3rei/tree/master/FreeRTOS)
 
 最後に苦しんでいるオタクのツイートをシェアしておきます.
-{{< tweet 1179734633669218306 >}}
+{{<tweet user="dango_bot" id="1179734633669218306">}}
 
 ## FreeRTOSの使用例
 ---

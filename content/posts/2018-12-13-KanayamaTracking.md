@@ -371,7 +371,7 @@ src/mazesolver.cpp辺りです.
 するとこんな感じに走ります.  
 走っているロボットはシステム同定をした際のロボットです. 詳細はこちら.  
 [NigLacerto](/posts/2018-09-09-MATLABSystemIdentification.md)
-{{< tweet 1067365846182285315 >}}
+{{<tweet user="dango_bot" id="1067365846182285315">}}
 
 マイコン内部のデータをプロットした結果, このようになりました. オレンジが目標軌道, 水色と黄色が自己位置です.
 ![chaseLog](/images/2018-12-14-TrajectChase.png)
@@ -404,4 +404,4 @@ Kanayama Control Method は上で見たとおり, 実装はとても簡単なも
 [独立二輪車型ロボットで目標軌道に追従する制御をする② ](http://idken.net/posts/2018-11-07-trajectory_tracking2/)
 
 最後に元気に軌道追従で走る私のマウスの動画を貼って終わりにしたいと思います.
-{{< tweet 1068492077686616064 >}}
+{{<tweet user="dango_bot" id="1068492077686616064">}}
