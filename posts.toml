@@ -33,7 +33,7 @@ googleAnalytics = "UA-141196296-1"
 		name = "dangorogoro"
 		description = "やったこととか書いていきます"
 		avatar = "/images/icon.jpg"
-		motto = "インターネット恋の歌"
+		motto = "passion"
 
 	[params.features]
 		#Enable Twitter Emoji
