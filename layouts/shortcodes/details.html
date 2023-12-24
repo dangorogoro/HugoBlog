@@ -1,0 +1,9 @@
+<details>
+  <summary>{{ .Get "description"| markdownify }}</summary>
+  <p> {{ .Inner | markdownify}} </p>
+  {{ if .Get "img" }}
+  <figure>
+    <img src="{{ .Get "img" }}">
+  </figure>
+  {{ end }}
+</details>
