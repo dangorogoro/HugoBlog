@@ -2,7 +2,7 @@
 <meta name="twitter:title" content="{{ . | truncate 70 }}" />
 {{- end }}
 {{- with .Description | default .Params.subtitle | default .Summary }}
-<meta name="twitter:description" content="{{ . | truncate 200 }}" />
+<meta name="twitter:description" content="{{ . | truncate 100 }}" />
 {{- end }}
 {{- with .Params.share_img | default .Params.image | default .Site.Params.logo }}
 <meta name="twitter:image" content="{{ . | absURL }}" />
