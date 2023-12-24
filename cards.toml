@@ -43,3 +43,6 @@ enableEmoji=true
 	stackoverflow = "9271608/utkarsh-verma"
 	medium = "UtkarshVerma_"
 	twitter = "UtkarshVerma_"
+
+[outputs]
+  home = ['html', 'rss']
